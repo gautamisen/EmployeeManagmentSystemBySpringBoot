@@ -1,0 +1,39 @@
+<section class="d-flex justify-content-center align-item-center ">
+		<div class="card " style="width: 40rem; margin-top: 10px;">
+			<div class="row g-0">
+				<div class="col-4 shinobu-bg">
+					<img alt="shinobu missing..." src="/images/emp.jpg"
+						width="220px;" height="100%">
+				</div>
+				<div class="col-8 bg-warning card-body 	">
+					<h1 class="card-title mb-3">Apply For Job</h1>
+					<div>
+					<div th:if="${success}" th:text="${success}"></div>
+						<form action="/carrer" method="post" enctype="application/x-www-form-urlencoded" 
+						>
+							<div>
+								<div class="form-floating mb-3" >
+									<input type="text" class="form-control" id="name" name="name"
+										placeholder=""  value="" /> <label for="name">Enter
+										Your Name</label>
+								</div>
+								<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="email" value="" name="email"
+								placeholder="" />
+								<label for="email" >Enter your Email</label>
+								</div>
+								<div class="form-floating mb-3">
+								<input type="file" class="form-control" id="resume" accept=".pdf,.docx" name="file"
+								placeholder=""  />
+								<label for="resume" id="file-control" >Enter your resume</label>
+								</div>
+								<button class=" btn btn-primary d-grid mx-auto">Apply Now</button>
+							</div>
+						</form>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
